@@ -1,0 +1,12 @@
+<div *ngIf="displayError" >
+  <span class="glyphicon glyphicon-remove form-control-feedback fix-error-icon"></span>
+  <span class="sr-only">(error)</span>
+  <div class="error-msg">
+    <!--{{errorMsg}}-->
+
+    <div *ngIf="errorMsg == 'email'">{{'Form.email' | translate}}</div>
+    <div *ngIf="errorMsg == 'subject'">{{'Form.subject' | translate}}</div>
+    <div *ngIf="errorMsg == 'content'">{{'Form.content' | translate}}</div>
+
+  </div>
+</div>

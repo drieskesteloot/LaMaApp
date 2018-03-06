@@ -1,28 +1,72 @@
 <section class="section--padding-bottom-small">
   <div class="container">
     <h1>Contact us</h1>
-    <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <div class="col-md-4">
+      <h4><strong>LaMa Photography | Design</strong>
+      </h4>
+      <p>Oude baan 324
+        <br/>3000 Leuven, Belgium</p>
+      <ul class="list-unstyled">
+        <li><i class="fa fa-phone fa-fw"></i> +32 (0)498 66 95 35</li>
+        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:lama@gmail.com">lama@gmail.com</a>
+        </li>
+      </ul>
+      <br>
+      <ul class="list-inline">
+        <li>
+          <a href="#" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+        </li>
+        <!--
+        <li>
+          <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+        </li>
+        -->
+        <li>
+          <a href="#" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+        </li>
+      </ul>
+      <!--<hr class="small">-->
+    </div>
+    <div class="col-md-8">
+    <form class="form-horizontal" [formGroup]="mailForm">
+
+      <div class="form-group" [ngClass]="displayFieldCss('email')">
+        <div class="col-sm-12">
+          <label for="email" class="control-label required">Email</label>
+          <input type="text" id="email" class="form-control" formControlName="email">
+          <app-field-error-display [displayError]="isFieldValid('email')" errorMsg="email">
+          </app-field-error-display>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        <small></small>
+
+      <div class="form-group" [ngClass]="displayFieldCss('subject')">
+        <div class="col-sm-12">
+          <label for="subject" class="control-label required">Subject</label>
+          <input type="text" id="subject" class="form-control" formControlName="subject">
+          <app-field-error-display [displayError]="isFieldValid('subject')" errorMsg="subject">
+          </app-field-error-display>
+        </div>
       </div>
-      <!--
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+
+      <div class="form-group" [ngClass]="displayFieldCss('content')">
+        <div class="col-sm-12">
+          <label for="content" class="control-label required">Content</label>
+          <input type="text" id="content" class="form-control" formControlName="content">
+          <app-field-error-display [displayError]="isFieldValid('content')" errorMsg="content">
+          </app-field-error-display>
+        </div>
       </div>
-      -->
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <div class="alert alert-success" *ngIf="formSuccess">{{'Form.success' | translate}}</div>
+      <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+      <button class="btn" (click)="reset()">Reset</button>
+
     </form>
+    </div>
   </div>
 </section>

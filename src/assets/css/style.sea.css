@@ -1,10 +1,10 @@
-/* 
-========================================= 
-========================================= 
+/*
+=========================================
+=========================================
 
-Barunka template By Bootstrapious.com     
+Barunka template By Bootstrapious.com
 
-========================================= 
+=========================================
 ========================================= */
 /* variant 3 - sea */
 /*
@@ -27,7 +27,10 @@ NAVBAR
 .navbar a.navbar-brand {
   font-weight: bold;
   letter-spacing: 0.2em;
+  /*Deze is aangepast door Foto LaMa rood
   color: #379392;
+  */
+  color: #a52019;
 }
 .navbar a.navbar-brand:focus,
 .navbar a.navbar-brand:hover {
@@ -57,31 +60,39 @@ NAVBAR
     background-color: transparent;
   }
   .home .navbar-default a.navbar-brand {
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    /*schaduw verwijderd*/
+    /*text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);*/
   }
   .home .navbar-default .navbar-nav > li > a {
-    color: #fff;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    /*color: #fff;*/
+	  color: #333333;
+    /*schaduw verwijderd*/
+    /*text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);*/
   }
   .home .navbar-default .navbar-brand {
-    color: #fff;
+    /*color: #fff;*/
+	color: #333333;
     position: relative;
     top: 0;
   }
   .home .navbar-default .navbar-brand:hover,
   .home .navbar-default .navbar-brand:focus {
-    color: #fff;
+    /*color: #fff;*/
+	  color: #333333;
     top: 2px;
   }
   .home .navbar-default ul.nav > li > a:hover,
   .home .navbar-default ul.nav > li > a:focus {
-    border-top-color: #fff;
-    color: #fff;
+    /*border-top-color: #fff;*/
+    /*Deze kan aangepast worden door Foto LaMa rood*/
+    border-top-color: #0c0c0c;
+    color: #0c0c0c;
   }
   .home .navbar-default ul.nav > li.active > a,
   .home .navbar-default ul.nav > li.open > a {
     text-decoration: none !important;
-    border-top-color: #fff;
+	/*border-top-color: #fff;*/
+	border-top-color: #333333;
   }
 }
 .navbar-toggle {
@@ -129,9 +140,16 @@ GENERAL
 */
 html {
   height: 100%;
+  /*toegevoegd*/
+  /*
+  min-height: 100%;
+  position: relative;
+  */
 }
 body {
   height: 100%;
+  /*toegevoegd*/
+  /*margin-bottom: 60px;*/
 }
 header {
   z-index: 1000;
@@ -153,7 +171,8 @@ section.section--padding-bottom-small {
 }
 .italic {
   font-style: italic;
-  font-family: "Roboto Slab", "Times New Roman", Times, serif;
+  /*Agency FB toegevoegd*/
+  font-family: "Agency FB", "Roboto Slab", "Times New Roman", Times, serif;
 }
 .heading {
   margin-bottom: 20px;
@@ -403,7 +422,7 @@ fieldset[disabled] .btn-white.active {
     background-color: #379392;
   }
 }
-.icon {
+.iconTheme {
   display: inline-block;
   width: 80px;
   height: 80px;
@@ -520,7 +539,8 @@ p.social.social--big i {
 }
 /* breadcrumbs */
 .breadcrumb {
-  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  /*Agency FB toegevoegd*/
+  font-family: "Agency FB", "Roboto Condensed", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: left;
@@ -941,7 +961,8 @@ SERVICES
   margin: 0 30px 30px 0;
 }
 .author-date-top {
-  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  /*Agency FB toegevoegd*/
+  font-family: "Agency FB", "Roboto Condensed", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #999999;
@@ -959,7 +980,8 @@ SERVICES
   color: #000;
 }
 .post .author-category {
-  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  /*Agency FB toegevoegd*/
+  font-family: "Agency FB", "Roboto Condensed", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #999999;
@@ -974,7 +996,8 @@ SERVICES
   color: #379392;
 }
 .post .date-comments {
-  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  /*Agency FB toegevoegd*/
+  font-family: "Agency FB", "Roboto Condensed", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #999999;
@@ -1054,7 +1077,8 @@ SERVICES
   font-size: 13px;
 }
 .blog-post .comment .reply {
-  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  /*Agency FB toegevoegd*/
+  font-family: "Agency FB", "Roboto Condensed", Helvetica, Arial, sans-serif;
 }
 .blog-post .comment.last {
   margin-bottom: 0;
@@ -1088,6 +1112,12 @@ SERVICES
 =====================
 FOOTER AND COPYRIGHT
 =====================
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
 
 */
 .footer__block {
@@ -1133,12 +1163,30 @@ FOOTER AND COPYRIGHT
 .footer__block p.social {
   text-align: left;
 }
+/*toegevoegd*/
+/*
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+*/
+/************/
 .footer__copyright {
-  background: #333333;
-  color: #ccc;
-  padding: 20px 0;
-  font-size: 13px;
-  line-height: 28px;
+  /*toegevoegd*/
+
+  /*height: 60px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  */
+  /************/
+	background: #333333;
+	color: #ccc;
+	padding: 20px 0;
+  /*font-size aangepast van 13px naar 17px (Agency FB)*/
+	font-size: 17px;
+	line-height: 28px;
 }
 .footer__copyright p {
   margin: 0;
@@ -1270,7 +1318,8 @@ STYLE SWITCHER FOR DEMO
 }
 /* navbar */
 .navbar {
-  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  /*Agency FB toegevoegd*/
+  font-family: "Agency FB", "Roboto Condensed", Helvetica, Arial, sans-serif;
   min-height: 60px;
   margin-bottom: 0;
   border-top: none;
@@ -1339,7 +1388,8 @@ STYLE SWITCHER FOR DEMO
 .navbar-brand {
   float: left;
   padding: 18.5px 15px;
-  font-size: 19px;
+  /*font-size aangepast van 19px naar 41px (Agency FB)*/
+  font-size: 41px;
   line-height: 23px;
   height: 60px;
 }
@@ -1461,13 +1511,19 @@ STYLE SWITCHER FOR DEMO
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
+  /*Deze is aangepast door Foto Lama rood
   color: #379392;
+  */
+  color: #a52019;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
+  /*Deze is aangepast door Foto Lama rood
   color: #379392;
+  */
+  color: #a52019;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .disabled > a,
@@ -1562,14 +1618,24 @@ STYLE SWITCHER FOR DEMO
 }
 /* scaffolding */
 body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  /*toegevoegd*/
+  /*
+  height: 100%;
+  */
+  /************/
+  /*Agency FB toegevoegd*/
+  font-family: "Agency FB", "Roboto", Helvetica, Arial, sans-serif;
+  /*font-size aangepast van 15px naar 17px (Agency FB)*/
+  font-size: 17px;
   line-height: 1.55;
   color: #000;
   background-color: #fff;
 }
 a {
+  /*Deze is aangepast door Foto Lama rood
   color: #379392;
+  */
+  color: #a52019;
   text-decoration: none;
 }
 a:hover,
@@ -1607,7 +1673,10 @@ hr {
   color: #999999;
 }
 .breadcrumb a {
+  /*Kleuren aangepast naar FotoLama rood
   color: #379392;
+  */
+  color: #a52019;
 }
 @media (max-width: 991px) {
   .breadcrumb {
@@ -1617,7 +1686,8 @@ hr {
 /* buttons  */
 .btn {
   font-weight: 700;
-  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  /*Agency FB toegevoegd*/
+  font-family: "Agency FB", "Roboto Condensed", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   padding: 6px 12px;
@@ -1626,23 +1696,33 @@ hr {
   border-radius: 0;
 }
 .btn-primary {
+  /*Kleuren aangepast naar FotoLama rood
   color: #379392;
   background-color: #fff;
   border-color: #379392;
+  */
+  color: #a52019;
+  background-color: #fff;
+  border-color: #a52019;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
+  /*Kleuren aangepast naar FotoLama rood
   color: #379392;
   background-color: #ebebeb;
   border-color: #266666;
+  */
+  color: #a52019;
+  background-color: #ebebeb;
+  border-color: #a52019;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  background-image: none;
+background-image: none;
 }
 .btn-primary.disabled,
 .btn-primary[disabled],
@@ -1659,39 +1739,44 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #fff;
-  border-color: #379392;
+background-color: #fff;
+border-color: #379392;
 }
 .btn-primary .badge {
-  color: #fff;
-  background-color: #379392;
+color: #fff;
+background-color: #379392;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
-  background: #379392;
+/*Kleuren aangepast naar FotoLama rood
+background: #379392;
+color: #fff;
+border: solid 1px #379392;
+*/
+  background: #a52019;
   color: #fff;
-  border: solid 1px #379392;
+  border: solid 1px #a52019;
 }
 .btn-transparent {
-  color: #555555;
-  background-color: transparent;
-  border-color: #555555;
+color: #555555;
+background-color: transparent;
+border-color: #555555;
 }
 .btn-transparent:hover,
 .btn-transparent:focus,
 .btn-transparent:active,
 .btn-transparent.active,
 .open .dropdown-toggle.btn-transparent {
-  color: #555555;
-  background-color: rgba(0, 0, 0, 0);
-  border-color: #373737;
+color: #555555;
+background-color: rgba(0, 0, 0, 0);
+border-color: #373737;
 }
 .btn-transparent:active,
 .btn-transparent.active,
 .open .dropdown-toggle.btn-transparent {
-  background-image: none;
+background-image: none;
 }
 .btn-transparent.disabled,
 .btn-transparent[disabled],
@@ -1708,37 +1793,37 @@ fieldset[disabled] .btn-transparent:active,
 .btn-transparent.disabled.active,
 .btn-transparent[disabled].active,
 fieldset[disabled] .btn-transparent.active {
-  background-color: transparent;
-  border-color: #555555;
+background-color: transparent;
+border-color: #555555;
 }
 .btn-transparent .badge {
-  color: transparent;
-  background-color: #555555;
+color: transparent;
+background-color: #555555;
 }
 .btn-transparent:hover,
 .btn-transparent:focus,
 .btn-transparent:active,
 .btn-transparent.active {
-  background: #379392;
-  color: #fff;
+background: #379392;
+color: #fff;
 }
 .btn-lg {
-  padding: 10px 16px;
-  font-size: 19px;
-  line-height: 1.33;
-  border-radius: 0;
+padding: 10px 16px;
+font-size: 19px;
+line-height: 1.33;
+border-radius: 0;
 }
 .btn-sm {
-  padding: 5px 10px;
-  font-size: 13px;
-  line-height: 1.5;
-  border-radius: 0;
+padding: 5px 10px;
+font-size: 13px;
+line-height: 1.5;
+border-radius: 0;
 }
 .btn-xs {
-  padding: 1px 5px;
-  font-size: 13px;
-  line-height: 1.5;
-  border-radius: 0;
+padding: 1px 5px;
+font-size: 13px;
+line-height: 1.5;
+border-radius: 0;
 }
 /* dropdowns */
 .dropdown-menu > li > a {
@@ -1746,7 +1831,8 @@ fieldset[disabled] .btn-transparent.active {
 }
 /* labels */
 .label {
-  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  /*Agency FB toegevoegd*/
+  font-family: "Agency FB", "Roboto Condensed", Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -1796,7 +1882,8 @@ label {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 13px;
-  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  /*Agency FB toegevoegd*/
+  font-family: "Agency FB", "Roboto Condensed", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .pager li {
@@ -1825,7 +1912,8 @@ label {
 /* pagination */
 .pagination {
   margin: 23px 0;
-  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  /*Agency FB toegevoegd*/
+  font-family: "Agency FB", "Roboto Condensed", Helvetica, Arial, sans-serif;
   border-radius: 0;
 }
 .pagination > li > a,
@@ -1863,7 +1951,7 @@ label {
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
   z-index: 2;
-  color: #fff;
+  color: active;
   background-color: #379392;
   border-color: #379392;
 }
@@ -1911,7 +1999,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  /*Agency FB toegevoegd*/
+  font-family: "Agency FB", "Roboto Condensed", Helvetica, Arial, sans-serif;
   font-weight: 700;
   line-height: 1.2;
   color: #000;
@@ -1966,10 +2055,12 @@ p {
   }
 }
 .text-small {
-  font-size: 13px;
+  /*font-size aangepast van 13px naar 15px (Agency FB)*/
+  font-size: 15px;
 }
 .text-large {
-  font-size: 19px;
+  /*font-size aangepast van 19px naar 21px (Agency FB)*/
+  font-size: 21px;
 }
 .text-italic {
   font-style: italic;

@@ -8,4 +8,9 @@ import {Router} from '@angular/router';
 })
 export class AppComponent {
   constructor( private router: Router ) { }
+
+  toTop() {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }
+
 }

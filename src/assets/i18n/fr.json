@@ -1,0 +1,21 @@
+{
+	"NavbarPhotography": "Je",
+	"NavbarDesign": "suis",
+	"NavbarPhotobooth": "La même",
+  "Navbar.Photo": "Photography",
+  "Navbar.Design": "Design",
+  "Navbar.Booth": "Booth in a bus",
+	"Navbar.NL": "Néerlandais",
+	"Navbar.FR": "Français",
+	"Navbar.EN": "Anglais",
+	"Presentation.title": "Voila ce qo'on fait",
+  "Form.success": "An email has been send. We will contact you a soon as possible",
+  "Form.email": "Adresse email",
+  "Form.subject": "Sujet",
+  "Form.content": "Question",
+  "title.error.404": "Pagina niet gevonden.",
+  "text.error.404": "Na dagenlang zoekwerk, werd de pagina nog steeds niet gevonden. Ik hoop dat iemand ze vindt.",
+  "text.go.home": "Ga naar de beginpagina",
+  "home.projects": "Découvrez le ici",
+  "contact.titel": "Contactez nous"
+}

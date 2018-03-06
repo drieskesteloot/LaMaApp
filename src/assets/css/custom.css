@@ -3,14 +3,16 @@
 .btn-dark-LaMa {
     border-radius: 0;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.4);
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    background-color: #a52019;
 }
 
 .btn-dark-LaMa:hover,
 .btn-dark-LaMa:focus,
 .btn-dark-LaMa:active {
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.7);
+    /*background-color: rgba(0, 0, 0, 0.7);*/
+    background-color: #F54660;
 }
 
 .btn-light-LaMa {
@@ -44,9 +46,167 @@
     -o-background-size: cover;
 }
 
+.control-label.required:after {
+    color: #d00;
+    content: "*";
+    position: absolute;
+    margin-left: 5px;
+    top:7px;
+}
+/*
+.sectionLaMaApp {
+  position: relative;
+  padding-top: 90px;
+  min-height: 100%;
+}
+*/
+googleLamaForm{
+  min-height: 100%;
+}
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/************************/
+/*
+a{
+	cursor: pointer;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+*/
+#test {
+  height: 100%;
+  min-height: 100%;
+}
+
 #to-top {
     display: none;
     position: fixed;
     bottom: 5px;
     right: 5px;
+    z-index: 99;
+}
+
+/*Custom menu*/
+
+#topLang {
+	/*background: #555555;*/
+    background: #333333;
+    padding: 10px 0;
+}
+
+#topLang .offer {
+    color: #fff;
+}
+
+#topLang .offer .btn {
+    text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+    #topLang .offer {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 991px) {
+    #topLang {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+#topLang a {
+    /*color: #fff;*/
+	color: #ccc;
+	cursor: pointer;
+}
+
+#topLang a:hover {
+	text-decoration:underline;
+}
+
+#topLang ul.menuLang {
+    padding-top: 5px;
+    margin: 0;
+    text-align: right;
+    /*font-size aangepast van 12px naar 16px (Agency FB)*/
+    font-size: 16px;
+    list-style: none;
+}
+
+@media (max-width: 991px) {
+    #topLang ul.menuLang {
+        text-align: center;
+    }
+}
+
+#topLang ul.menuLang > li {
+    display: inline-block;
+}
+
+#topLang ul.menuLang > li a {
+    /*color: #eeeeee;*/
+	color: #ccc;
+}
+
+#topLang ul.menuLang > li + li:before {
+    content: "|\00a0";
+    padding: 0 5px;
+    color: #f7f7f7;
+}
+
+#topLang ul.menuLang > .active {
+    color: #999999;
+}
+
+/*********ERROR PAGE***********/
+#content #error-page {
+    text-align: center;
+}
+
+#content #error-page h4 {
+    margin-bottom: 40px;
+}
+
+#content #error-page p.buttons {
+    margin-top: 40px;
+}
+
+
+/* breadcrumbs */
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 0;
+}
+
+.breadcrumb > li + li:before {
+  content: ">\00a0";
+  color: #cccccc;
+}
+
+.breadcrumb > .active {
+  color: #999999;
+}
+
+@media (max-width: 991px) {
+  .breadcrumb {
+    padding: 8px 0;
+    text-align: center;
+  }
+}
+
+@font-face {
+  font-family: 'Agency FB';
+  src: url('../fonts/agency-fb.eot?#iefix') format('embedded-opentype'), url('../fonts/agency-fb.ttf')  format('truetype');
 }
