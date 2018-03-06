@@ -62,19 +62,4 @@ export class ContactFormComponent implements OnInit {
     this.formSuccess = false;
   }
 
-  /*
-  public static ClientResponse SendSimpleMessage() {
-    Client: client = Client.create();
-    client.addFilter(new HTTPBasicAuthFilter("api", "key-fa767737be002679eb3135bcb47b54ea"));
-    WebResource: webResource = client.resource("https://api.mailgun.net/v3/sandboxd11bba1074094a908dfca88d6500518e.mailgun.org/messages");
-    MultivaluedMapImpl: formData = new MultivaluedMapImpl();
-    formData.add("from", "Mailgun Sandbox <postmaster@sandboxd11bba1074094a908dfca88d6500518e.mailgun.org>");
-    formData.add("to", "Dries Kesteloot <kesteloot.dries@gmail.com>");
-    formData.add("subject", "Hello Dries Kesteloot");
-    formData.add("text", "Congratulations Dries Kesteloot, you just sent an email with Mailgun!  You are truly awesome!");
-    return webResource.type(MediaType.APPLICATION_FORM_URLENCODED).
-    post(ClientResponse.class, formData);
-  }
-  */
-
 }
