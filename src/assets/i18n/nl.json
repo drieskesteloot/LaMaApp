@@ -9,6 +9,7 @@
 	"Navbar.FR": "Frans",
 	"Navbar.EN": "Engels",
 	"Presentation.title": "Dit doen we",
+  "Presentation.content": "'Foto Lama' is een creatieve plek voor fotografie en design, op 8 poten gezet door twee wollige lama’s. Deze lama’s houden bovendien enorm van vintage Volkswagens. Naast fotograferen en ontwerpen, rijden ze het liefst rond in hun VW-busje uit 1969, met eigen, ingebouwde photo booth. Handig, toch?",
   "Form.success": "An email has been send. We will contact you a soon as possible",
   "Form.email": "E-mailadres",
   "Form.subject": "Onderwerp",
@@ -17,5 +18,14 @@
   "text.error.404": "Na dagenlang zoekwerk, werd de pagina nog steeds niet gevonden. Ik hoop dat iemand ze vindt.",
   "text.go.home": "Ga naar de beginpagina",
   "home.projects": "Ontdek het hier",
-  "contact.titel": "Contacteer ons"
+  "contact.titel": "Contacteer ons",
+  "Photography.presentation.content.p1":"Lama’s houden enorm van fotograferen, dat is een simpel biologisch feit. Foto Lama brengt je event in beeld, maakt een reportage over je pasgeborene, maar shoot met evenveel gusto je huwelijk. Het is bovendien zo dat lama’s bijzonder avontuurlijk aangelegd zijn. Heb je een gek idee? Laat het ons gerust weten, nothing is too much for a llama",
+  "Photography.presentation.content.p2":"Interesse? Graag zitten we met je samen en werken we een persoonlijk voorstel uit, helemaal afgestemd op jouw noden en verwachtingen.",
+  "Photography.presentation.content.p3":"Prijzen starten vanaf 165 euro voor een shoot van twee uur.",
+  "Design.presentation.content.p1":"Lama’s zijn heel erg creatieve dieren en houden enorm van ontwerpen.",
+  "Design.presentation.content.p2":"Foto Lama maakt je nagelnieuwe bedrijfslogo, ontwerpt de uitnodigingen voor je huwelijk - en ook graag het geboortekaartje negen maanden later - , posters en promomateriaal voor je event of company en alles wat jij - en deze twee lama’s -  maar bedenken kunnen.",
+  "Design.presentation.content.p3":"We zitten graag met je samen om een persoonlijk voorstel uit te werken. Drop us a line!",
+  "Design.presentation.content.p4":"Prijzen starten vanaf 255 euro voor een volledig persoonlijk design.",
+  "Booth.presentation.content.p1":"Onze knappe Volkswagenbus, Dalai, fleurt je trouwfeest of event op. Kruip met een aantal vrienden in de bus, positioneer je perfect voor de ingebouwde camera, en maak onvergetelijke foto’s. Je neemt de foto helemaal zelf, en je uniek fotostripje rolt uit de printer.",
+  "Booth.presentation.content.p2":"Prijzen starten vanaf 595 euro voor 3 uur.  We zitten graag met jullie samen om een offerte op maat uit te werken."
 }

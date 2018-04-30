@@ -10,15 +10,15 @@ import {TranslateCacheService} from 'ngx-translate-cache';
 export class NavBarComponent implements OnInit {
   browserLang: string;
   constructor(private translateService: TranslateService, private translateCacheService: TranslateCacheService) {
-    //translate.setDefaultLang('en');
+    this.translateService.setDefaultLang('en');
     //this.browserLang = this.translateService.getBrowserLang();
     //this.translateService.use('en');
-    this.translateCacheService.init();
+    //this.translateCacheService.init();
   }
 
   ngOnInit() {
-    this.browserLang = this.translateService.getBrowserLang();
-    this.translateService.use(this.browserLang);
+    this.browserLang = this.translateService.getDefaultLang();
+    //this.translateService.use(this.browserLang);
     /*
     switch (this.browserLang) {
       case 'en':
@@ -36,13 +36,13 @@ export class NavBarComponent implements OnInit {
     }
     */
     //this.translateCacheService.init();
-    this.browserLang = this.translateCacheService.getCachedLanguage();
+    //this.browserLang = this.translateCacheService.getCachedLanguage();
   }
 
   public switchLanguage(language: string) {
     //this.translateService.use(language);
     this.browserLang = language;
-    switch (this.browserLang) {
+    switch (language) {
       case 'en':
         this.translateService.use('en');
         break;

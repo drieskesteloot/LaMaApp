@@ -9,6 +9,7 @@
 	"Navbar.FR": "French",
 	"Navbar.EN": "English",
 	"Presentation.title": "This is what we do",
+  "Presentation.content": "‘Foto Lama’ is a creative studio for photography and design, ran by two very furry llamas. These llamas just love vintage Volkswagens. And, yes, they prefer to travel around in their 1969 Volkswagen van, which comes with it’s very own built-in photo booth. Handy, right?",
   "Form.success": "An email has been send. We will contact you a soon as possible",
   "Form.email": "Email",
   "Form.subject": "Subject",
@@ -17,5 +18,14 @@
   "text.error.404": "Na dagenlang zoekwerk, werd de pagina nog steeds niet gevonden. Ik hoop dat iemand ze vindt.",
   "text.go.home": "Ga naar de beginpagina",
   "home.projects": "Find out more here",
-  "contact.titel": "Contact us"
+  "contact.titel": "Contact us",
+  "Photography.presentation.content.p1":"Llamas are very much into photography. It’s a natural fact.  Foto Lama covers everything from events, bridal shoots to family photoshoots and weddings. Llamas however, are very adventurous animals and like a challenge. Have a crazy idea, let us know, nothing is too much for a llama.",
+  "Photography.presentation.content.p2":"Interested? Drop us a line, and these llamas will be very happy to work with you towards a proposition that suits your needs and desires.",
+  "Photography.presentation.content.p3":"Prices start at 165 euro for a two hour shoot.",
+  "Design.presentation.content.p1":"Llamas are very creative animals and are happiest designing. ",
+  "Design.presentation.content.p2":"Foto Lama designs your brand new company logo, wedding invitation cards - and the birth announcement card nine months later - , posters for events and anything you - and these two llamas - can think of.",
+  "Design.presentation.content.p3":"For more information, do not hesitate to get in touch and we’ll be happy to discuss it with you.",
+  "Design.presentation.content.p4":"Prices start at 255 euro for a full personal design.",
+  "Booth.presentation.content.p1":"Our very handsome Volkswagen, Dalai, will be the star of your part. Jump in, get ready for the camera, and snap images you will never forget! You take your own pictures, and the image rolls out of the printer for you to take home.",
+  "Booth.presentation.content.p2":"Prices start at 595 for 3 hours, but we like to sit with you to work out a made-to-measure proposition."
 }

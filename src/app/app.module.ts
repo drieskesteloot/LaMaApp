@@ -38,6 +38,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeBoothComponent } from './home-booth/home-booth.component';
 import { PresentationBoothComponent } from './presentation-booth/presentation-booth.component';
 import { PortfolioBoothComponent } from './portfolio-booth/portfolio-booth.component';
+import { PortfolioPhotographySectionsComponent } from './portfolio-photography-sections/portfolio-photography-sections.component';
+import { PortfolioDesignSectionsComponent } from './portfolio-design-sections/portfolio-design-sections.component';
+import { PortfolioPhotographyTemplate2Component } from './portfolio-photography-template2/portfolio-photography-template2.component';
 
 const routes: Routes = [
     // basic routes
@@ -46,6 +49,7 @@ const routes: Routes = [
     { path: 'contact', component: ContactFormComponent },
     { path: 'googleForm', component: GoogleFormComponent },
     { path: 'photography', component: HomePhotographyComponent },
+    //{ path: 'photo2', component: PortfolioPhotographySectionsComponent },
     { path: 'photobooth', component: HomeBoothComponent },
     { path: 'design', component: HomeDesignComponent },
     {path: 'not-found', component: NotFoundComponent},
@@ -83,7 +87,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     NotFoundComponent,
     HomeBoothComponent,
     PresentationBoothComponent,
-    PortfolioBoothComponent
+    PortfolioBoothComponent,
+    PortfolioPhotographySectionsComponent,
+    PortfolioDesignSectionsComponent,
+    PortfolioPhotographyTemplate2Component
   ],
   imports: [
     BrowserModule,
@@ -100,7 +107,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       cacheService: {
         provide: TranslateCacheService,
         useFactory: (translateService, translateCacheSettings) => {
-          return new TranslateCacheService(translateService, translateCacheSettings)
+          return new TranslateCacheService(translateService, translateCacheSettings);
         },
         deps: [ TranslateService, TranslateCacheSettings ]
       }

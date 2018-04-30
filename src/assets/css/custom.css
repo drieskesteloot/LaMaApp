@@ -181,6 +181,9 @@ a:hover{
     margin-top: 40px;
 }
 
+.LaMaRed{
+  color: #a52019;
+}
 
 /* breadcrumbs */
 .breadcrumb {
@@ -199,14 +202,40 @@ a:hover{
   color: #999999;
 }
 
+.presentationFontFotoLama{
+  font-family: "house-script", "Agency FB", "Roboto", Helvetica, Arial, sans-serif;
+  /*font-size: 41px;*/
+}
+
+.boxFotoLama {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 991px) {
   .breadcrumb {
     padding: 8px 0;
     text-align: center;
+  }
+  .boxFotoLama {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .presentationFontFotoLama {
+    font-size: 41px;
+  }
+}
+@media (max-width: 767px) {
+  .presentationFontFotoLama {
+    font-size: 27px;
   }
 }
 
 @font-face {
   font-family: 'Agency FB';
   src: url('../fonts/agency-fb.eot?#iefix') format('embedded-opentype'), url('../fonts/agency-fb.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'house-script';
+  src: url('../fonts/SignPainter_HouseScript_Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/SignPainter_HouseScript_Regular.ttf')  format('truetype');
 }
